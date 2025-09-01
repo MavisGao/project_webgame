@@ -1,0 +1,189 @@
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: maroon;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+  height: 15%;
+  background-color: maroon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+h1 {
+  margin: 0;
+  color: white;
+}
+
+section {
+  height: 75%;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  text-align: center;
+  background: white;
+  padding: 10px;
+  height: 100%;
+  border-right: 5px solid maroon;
+  border-left: 5px solid maroon;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+article {
+  float: left;
+  padding: 10px;
+  border-right: 5px solid maroon;
+  width: 80%;
+  background-color: white;
+  height: 100%;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.sidebar {
+  word-wrap: break-word;
+}
+
+/* Sidebar Headers */
+h2 {
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+  background: maroon;
+  color: white;
+  font-size: 20px;
+}
+
+/* Styling for game select menu */
+.rcorners {
+  border-radius: 25px;
+  margin: 0.05em;
+  padding: 10px; 
+}
+
+.game_select {
+  background: gold;
+  width: 75%;
+  font-size: 14pt;
+  line-height: 1em;
+}
+
+/* Styling for high score table */
+#score_table {
+  border-radius: 25px;
+  padding: 10px;
+  width: 100%;
+  font-size: 16pt;
+  text-align: left;
+  font-family: 'Courier New', monospace;
+  background-color: silver;
+  margin: 10px auto 15px auto;
+}
+
+#col1 {
+  width: 20%;
+}
+
+#col2 {
+  width: 100%;
+}
+
+td {
+  margin: 15px;
+}
+
+/* Styling for the message that occupys high score display on home page */
+#noscores {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.3em;
+  margin: 0px;
+}
+
+
+/* Scroll functionality and sizing for the input/output fields */
+#out_wrapper {
+  height: 92%;
+  height: calc(100% - 48px);
+  max-width: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  overflow-wrap: break-word;
+}
+
+#input {
+  margin-top: 5px;
+  border-radius: 25px;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%
+}
+
+/* Style the user and bot messages */
+.chat_text {
+  border-radius: 25px;
+  padding: 10px; 
+  width: max-content;
+  max-width: 100%;
+  position: relative;
+  text-wrap: wrap;
+  margin-block-start: 0.25em;
+  margin-block-end:  0.25em;
+}
+
+.bot {
+  background: silver;
+}
+
+.user {
+  background: gold;
+  margin-left: auto;
+}
+
+/* Style the footer */
+footer {
+  height: 10%; 
+  background-color: maroon;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+footer p {
+  margin: 5px;
+}
+
+
+/* 
+https://www.w3schools.com/html/html_layout.asp
+https://jenkov.com/tutorials/html5/nav.html
+https://www.w3schools.com/css/css3_borders.asp
+https://www.w3schools.com/howto/howto_css_style_header.asp
+https://www.w3schools.com/w3css/w3css_templates.asp
+*/
+
